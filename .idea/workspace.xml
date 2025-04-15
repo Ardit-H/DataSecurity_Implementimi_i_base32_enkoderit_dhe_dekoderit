@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a316a5d7-9c01-4528-abf3-d8b8a3b6cbd3" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a316a5d7-9c01-4528-abf3-d8b8a3b6cbd3" name="Changes" comment="Inicializimi i variables BASE32_ALPHABET qe permbane alfabetin e perdorur per Base32">
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,11 +75,20 @@
       <option name="project" value="LOCAL" />
       <updated>1744322422825</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Inicializimi i variables BASE32_ALPHABET qe permbane alfabetin e perdorur per Base32">
+      <option name="closed" value="true" />
+      <created>1744744948069</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744744948069</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Inicializimi i variables BASE32_ALPHABET qe permbane alfabetin e perdorur per Base32" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inicializimi i variables BASE32_ALPHABET qe permbane alfabetin e perdorur per Base32" />
   </component>
 </project>
