@@ -51,4 +51,7 @@ public class Main {
 
         return encoded.toString();
     }
+    public static byte[] decode(String input) {
+        input = input.replace("=", "").toUpperCase();
+    }
 }
