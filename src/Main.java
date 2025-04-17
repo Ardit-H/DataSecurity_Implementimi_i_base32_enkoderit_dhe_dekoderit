@@ -3,26 +3,26 @@ import java.io.ByteArrayOutputStream;
 
 public class Main {
 
-    private static final String BASE32_ALPHABET="ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
-    private static final int[] REVERSE_ALPHABET=new int[128];
+    private static final String BASE32_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
+    private static final int[] REVERSE_ALPHABET = new int[128];
 
     static {
-        Arrays.fill(REVERSE_ALPHABET,-1);
-        for(int i=0;i<BASE32_ALPHABET.length();i++){
-            REVERSE_ALPHABET[BASE32_ALPHABET.charAt(i)]=i;
+        Arrays.fill(REVERSE_ALPHABET, -1);
+        for (int i = 0; i < BASE32_ALPHABET.length(); i++) {
+            REVERSE_ALPHABET[BASE32_ALPHABET.charAt(i)] = i;
         }
     }
 
-    public static String encode(byte[] input){
-        StringBuilder encoded=new StringBuilder();
-        int i=0;
-        int index=0;
+    public static String encode(byte[] input) {
+        StringBuilder encoded = new StringBuilder();
+        int i = 0;
+        int index = 0;
         int currByte;
         int nextByte;
         int digit;
 
-        while(i<input.length){
-            currByte=(input[i]>=0) ? input[i] : (input[i]+256);
+        while (i < input.length) {
+            currByte = (input[i] >= 0) ? input[i] : (input[i] + 256);
 
             if (index > 3) {
                 if ((i + 1) < input.length) {
@@ -52,6 +52,7 @@ public class Main {
 
         return encoded.toString();
     }
+
     public static byte[] decode(String input) {
         input = input.replace("=", "").toUpperCase();
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
@@ -61,11 +62,15 @@ public class Main {
             char c = input.charAt(i);
             if (c >= REVERSE_ALPHABET.length || REVERSE_ALPHABET[c] == -1) {
                 throw new IllegalArgumentException("Invalid Base32 character: " + c);
-        }
+            }
             buffer <<= 5;
             buffer |= REVERSE_ALPHABET[c];
             bitsLeft += 5;
-
-            return baos.toByteArray();
+            if (bitsLeft >= 8) {
+                baos.write((buffer >> (bitsLeft - 8)) & 0xFF);
+                bitsLeft -= 8;
+            }
+        }
+        return baos.toByteArray();
     }
 }
