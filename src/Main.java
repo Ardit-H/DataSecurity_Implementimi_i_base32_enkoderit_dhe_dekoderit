@@ -78,6 +78,10 @@ public class Main {
         String[] testStrings = {"f", "fo", "foo", "foob", "fooba", "foobar"};
         for (String input : testStrings) {
             System.out.println("Input" + input);
+
+            String encoded = encode(input.getBytes());
+            System.out.println("Base 32 Encoded :" + encoded);
+
         }
     }
 
