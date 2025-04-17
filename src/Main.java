@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.io.ByteArrayOutputStream;
 
 public class Main {
 
@@ -53,5 +54,10 @@ public class Main {
     }
     public static byte[] decode(String input) {
         input = input.replace("=", "").toUpperCase();
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        int buffer = 0;
+        int bitsLeft = 0;
+
+        return baos.toByteArray();
     }
 }
