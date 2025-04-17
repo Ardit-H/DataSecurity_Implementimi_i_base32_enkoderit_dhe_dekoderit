@@ -62,6 +62,10 @@ public class Main {
             if (c >= REVERSE_ALPHABET.length || REVERSE_ALPHABET[c] == -1) {
                 throw new IllegalArgumentException("Invalid Base32 character: " + c);
         }
-        return baos.toByteArray();
+            buffer <<= 5;
+            buffer |= REVERSE_ALPHABET[c];
+            bitsLeft += 5;
+
+            return baos.toByteArray();
     }
 }
