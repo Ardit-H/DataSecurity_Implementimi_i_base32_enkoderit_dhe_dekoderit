@@ -57,7 +57,9 @@ public class Main {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         int buffer = 0;
         int bitsLeft = 0;
-
+        for (int i = 0; i < input.length(); i++) {
+            char c = input.charAt(i);
+        }
         return baos.toByteArray();
     }
 }
