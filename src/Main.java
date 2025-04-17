@@ -59,6 +59,8 @@ public class Main {
         int bitsLeft = 0;
         for (int i = 0; i < input.length(); i++) {
             char c = input.charAt(i);
+            if (c >= REVERSE_ALPHABET.length || REVERSE_ALPHABET[c] == -1) {
+                throw new IllegalArgumentException("Invalid Base32 character: " + c);
         }
         return baos.toByteArray();
     }
