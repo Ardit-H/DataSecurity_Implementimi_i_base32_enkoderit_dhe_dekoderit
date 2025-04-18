@@ -80,7 +80,12 @@ public class Main {
             System.out.println("Input" + input);
 
             String encoded = encode(input.getBytes());
+            byte[] decoded = decode(encoded);
+            String decodedStr = new String(decoded);
+
             System.out.println("Base 32 Encoded :" + encoded);
+            System.out.println("Base 32 Decoded :" + decodedStr);
+            System.out.println("Match:" + input.equals(decodedStr));
 
         }
     }
