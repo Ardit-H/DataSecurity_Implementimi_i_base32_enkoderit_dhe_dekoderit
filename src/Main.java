@@ -86,6 +86,8 @@ public class Main {
             System.out.println("Base 32 Encoded :" + encoded);
             System.out.println("Base 32 Decoded :" + decodedStr);
             System.out.println("Match:" + input.equals(decodedStr));
+            System.out.println("------------------------------");
+
 
         }
     }
