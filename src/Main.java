@@ -77,7 +77,7 @@ public class Main {
     public static void main(String[] args) {
         String[] testStrings = {"f", "fo", "foo", "foob", "fooba", "foobar"};
         for (String input : testStrings) {
-            System.out.println("Input" + input);
+            System.out.println("Input " + input);
 
             String encoded = encode(input.getBytes());
             byte[] decoded = decode(encoded);
