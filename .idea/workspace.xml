@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a316a5d7-9c01-4528-abf3-d8b8a3b6cbd3" name="Changes" comment="Funksioni per kodim ne Base32">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a316a5d7-9c01-4528-abf3-d8b8a3b6cbd3" name="Changes" comment="Inicializimi i vargut REVERSE_ALPHABET per karaktere te vlefshme">
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,12 +21,12 @@
     &quot;assignee&quot;: &quot;Ardit-H&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Ardit-H/DataSecurity_Implementimi_i_base32_enkoderit_dhe_dekoderit.git&quot;,
-    &quot;accountId&quot;: &quot;1a27c557-b5be-42f9-b474-82829f4c391b&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Ardit-H/DataSecurity_Implementimi_i_base32_enkoderit_dhe_dekoderit.git",
+    "accountId": "24d5199d-fc2e-431d-ba4d-37501da9a738"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -40,12 +40,15 @@
   &quot;keyToString&quot;: {
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
 }</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="23" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="DataSecurity_Implementimi_i_base32_enkoderit_dhe_dekoderit" />
       <method v="2">
@@ -99,15 +102,7 @@
       <option name="project" value="LOCAL" />
       <updated>1744745324545</updated>
     </task>
-    <task id="LOCAL-00005" summary="Funksioni per kodim ne Base32">
-      <option name="closed" value="true" />
-      <created>1744796640668</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1744796640668</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -115,7 +110,6 @@
     <MESSAGE value="Inicializimi i variables BASE32_ALPHABET qe permbane alfabetin e perdorur per Base32" />
     <MESSAGE value="Deklarimi i vargut REVERSE_ALPHABET per dekodim te shpejte" />
     <MESSAGE value="Inicializimi i vargut REVERSE_ALPHABET per karaktere te vlefshme" />
-    <MESSAGE value="Funksioni per kodim ne Base32" />
-    <option name="LAST_COMMIT_MESSAGE" value="Funksioni per kodim ne Base32" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inicializimi i vargut REVERSE_ALPHABET per karaktere te vlefshme" />
   </component>
 </project>
